@@ -1,6 +1,8 @@
 # Blynk Server Docker Image
 
-[![](https://images.microbadger.com/badges/image/kropochev/blynk-server.svg)](https://microbadger.com/images/kropochev/blynk-server "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/kropochev/blynk-server.svg)](https://microbadger.com/images/kropochev/blynk-server "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/kropochev/blynk-server.svg)](http://microbadger.com/images/kropochev/blynk-server
+"Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/kropochev/blynk-server.svg)](http://microbadger.com/images/kropochev/blynk-server
+"Get your own version badge on microbadger.com")
 
 Runs your own [Blynk Server](https://github.com/blynkkk/blynk-server) in a Docker container instead of relying on Blynk's public server.
 
@@ -17,7 +19,7 @@ docker run kropochev/blynk-server:latest
 To forward IP ports from the host to the container, do this:
 
 ```sh
-docker run -p 8080:8080 -p 9443:9443 kropochev/blynk-server:latest
+docker run -p 8080:8080 -p 8441:8441 -p 9443:9443 kropochev/blynk-server:latest
 ```
 
 To persist data, mount a directory into the container:
